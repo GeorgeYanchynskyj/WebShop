@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Home</h2>
+
+<p>
+    Wellcome @User.Identity.Name
+</p>
+
+<p>
+    <a href="@Url.Action("logout", "auth")">Log Out</a>
+</p>
+
+<p>
+    <a href="@Url.Action("marketing", "marketing")">Marketing</a>
+</p>

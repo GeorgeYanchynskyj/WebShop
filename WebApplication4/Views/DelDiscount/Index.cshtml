@@ -1,0 +1,20 @@
+﻿@model WebApplication4.DelDiscModel
+@{
+    ViewBag.Title = "Delete discount";
+}
+
+<h2>New discount</h2>
+
+@Html.ValidationSummary(true)
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <p>
+        <button type="submit">Delete</button>
+    </p>
+}
+
+<p>
+    <a href="@Url.Action("index", "discounts")">Back</a>
+</p>
